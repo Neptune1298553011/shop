@@ -14,11 +14,13 @@ use Application\Model\ProductModel;
 
     public function selectProductAll()
     {
-        $sql = "select * from $this->tableName" ;
-        $query = $this->conn->query($sql);
-        $result =  $query->fetchAll();
+        $sql1 = "select id,product_name from $this->tableName where product_type = 'new' order by created_time limit 4 offset 1 " ;
+//        $sql2 = "select id,product_name from $this->tableName where product_type = 'hot' order by created_time limit 4 offset 1 " ;
+        $query = $this->conn->query($sql1);
+        $result =   $query->fetchAll(\PDO::FETCH_ASSOC);
 
-        return $result;
+        return $result  ;
+
         // TODO: Implement selectProductAll() method.
     }
 }

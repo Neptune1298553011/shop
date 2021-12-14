@@ -1,14 +1,14 @@
 <?php
 require "HttpHelper.php";
 
-try{
-    $query="select* from "
-}
-
 $curl = new HttpHelper();
 $data =   $curl->setParams(['id'=>1])->get("http://localhost:8000/shop/home");
+$curl = new HttpHelper();
+$products =   $curl->setParams(['XDEBUG_SESSION_START' => 'PHPSTORM'])->get("http://localhost:8000/shop/product/list");
 $data = json_decode($data,true);
-//var_dump($data);
+$data = json_decode($products,true);
+$data = $data['data'];
+var_dump($products);
 
 
 ?>
@@ -310,8 +310,8 @@ $data = json_decode($data,true);
                             <a class="link" target="_blank"
                                href="view.php?id=<?php echo $row['id'];?>">
                                 <div class="img show_tag " style="" >
-                                    <img style="" src="images/statics/<?php  echo $row["product_img"]
-                                    ?>"
+<!--                                    <img style="" src="images/statics/--><?php // echo $row["product_img"]
+//                                    ?><!--"-->
                                 </div>
 
                                 <div class="all-name ">
