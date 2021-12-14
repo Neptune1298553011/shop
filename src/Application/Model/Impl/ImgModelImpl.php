@@ -5,7 +5,7 @@ namespace Application\Model\Impl;
 use Application\Domain\Img;
 use Application\Model\ImgModel;
 
-abstract class ImgModelImpl extends BaseModelImpl implements ImgModel
+ class ImgModelImpl extends BaseModelImpl implements ImgModel
 {
 
 

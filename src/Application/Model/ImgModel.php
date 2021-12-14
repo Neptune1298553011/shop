@@ -11,5 +11,5 @@ interface ImgModel
      *
      * @return mixed
      */
-    public function selectImgAll();
+//    public function selectImgAll();
 }

@@ -4,7 +4,7 @@ namespace Application\Model\Impl;
 
 use Application\Model\ProductModel;
 
-abstract class ProductModelImpl extends BaseModelImpl implements ProductModel
+ class ProductModelImpl extends BaseModelImpl implements ProductModel
 {
     public function __construct(\PDO $pdo)
     {

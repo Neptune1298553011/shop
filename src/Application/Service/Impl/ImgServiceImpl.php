@@ -19,8 +19,8 @@ class ImgServiceImpl implements ImgService
     {
         return $this->imgModel->selectFindById($id);
     }
-    public function findAllProduct()
-    {
-        return $this->imgModel->selectImgAll();
-    }
+//    public function findAllProduct()
+//    {
+//        return $this->imgModel->selectImgAll();
+//    }
 }

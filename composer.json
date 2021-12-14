@@ -3,7 +3,8 @@
         "psr/http-message": "1.0",
         "psr/container": "1.0.0",
 
-        "twinkle/di": "^1.0"
+        "twinkle/di": "^1.0",
+      "ext-pdo": "*"
     },
 
     "autoload": {

@@ -12,10 +12,10 @@ class ProductServiceImpl implements ProductService
     {
         $this->productModel = $productModel;
     }
-    public function findProductById($id)
-    {
-        return $this->productModel->selectFindById($id);
-    }
+//    public function findProductById($id)
+//    {
+//        return $this->productModel->selectFindById($id);
+//    }
 
 
     public function findAllProduct()

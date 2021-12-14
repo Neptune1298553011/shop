@@ -1,7 +1,14 @@
 <?php
 require "HttpHelper.php";
+
+try{
+    $query="select* from "
+}
+
 $curl = new HttpHelper();
-echo  $curl->setParams(['id'=>1])->get("http://localhost:8000/shop/home");
+$data =   $curl->setParams(['id'=>1])->get("http://localhost:8000/shop/home");
+$data = json_decode($data,true);
+//var_dump($data);
 
 
 ?>
@@ -18,15 +25,15 @@ echo  $curl->setParams(['id'=>1])->get("http://localhost:8000/shop/home");
     <meta itemprop="name" content="IGG周边商城" />
     <title>igg 商城 </title>
     <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
-    <link href="../../../../public/css/swiper.min.css" rel="stylesheet" type="text/css">
-    <link href="../../../../public/css/layout.css" rel="stylesheet" type="text/css">
-    <link href="../../../../public/css/style.css" rel="stylesheet" type="text/css">
+    <link href="../../../public/css/swiper.min.css" rel="stylesheet" type="text/css">
+    <link href="../../../public/css/layout.css" rel="stylesheet" type="text/css">
+    <link href="../../../public/css/style.css" rel="stylesheet" type="text/css">
 
     <script>
         var SHOP_LANGUAGE = 'chs';
     </script>
-    <script src="../../../../public/scripts/jquery-1.11.1.min.js"></script>
-    <script src="../../../../public/scripts/cookies_popup.php"></script>
+    <script src="../../../public/scripts/jquery-1.11.1.min.js"></script>
+    <script src="../../../public/scripts/cookies_popup.php"></script>
 
     <script>!function(a){var e="https://s.go-mpulse.net/boomerang/",t="addEventListener";if("False"=="True")a.BOOMR_config=a.BOOMR_config||{},a.BOOMR_config.PageParams=a.BOOMR_config.PageParams||{},a.BOOMR_config.PageParams.pci=!0,e="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="F8PGR-MHD75-KZ22G-MNSSF-GYYDZ",function(){function n(e){a.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!a.BOOMR||!a.BOOMR.version&&!a.BOOMR.snippetExecuted){a.BOOMR=a.BOOMR||{},a.BOOMR.snippetExecuted=!0;var i,_,o,r=document.createElement("iframe");if(a[t])a[t]("load",n,!1);else if(a.attachEvent)a.attachEvent("onload",n);r.src="javascript:void(0)",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="width:0;height:0;border:0;display:none;",o=document.getElementsByTagName("script")[0],o.parentNode.insertBefore(r,o);try{_=r.contentWindow.document}catch(O){i=document.domain,r.src="javascript:var d=document.open();d.domain='"+i+"';void(0);",_=r.contentWindow.document}_.open()._l=function(){var a=this.createElement("script");if(i)this.domain=i;a.id="boomr-if-as",a.src=e+"F8PGR-MHD75-KZ22G-MNSSF-GYYDZ",BOOMR_lstart=(new Date).getTime(),this.body.appendChild(a)},_.write("<bo"+'dy onload="document._l();">'),_.close()}}(),"".length>0)if(a&&"performance"in a&&a.performance&&"function"==typeof a.performance.setResourceTimingBufferSize)a.performance.setResourceTimingBufferSize();!function(){if(BOOMR=a.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var e=""=="true"?1:0,t="",n="ouoooeixziriaymr26hq-f-441da49ad-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,_={"ak.v":"32","ak.cp":"842229","ak.ai":parseInt("537709",10),"ak.ol":"0","ak.cr":69,"ak.ipv":4,"ak.proto":"h2","ak.rid":"ca31710","ak.r":40584,"ak.a2":e,"ak.m":"b","ak.n":"ff","ak.bpcip":"117.28.231.0","ak.cport":52459,"ak.gh":"23.202.34.124","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.csrc":"-","ak.acc":"","ak.t":"1636947855","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==/rvj7h1W4mLCdHQCbqBj+yx5DT+eIrylTv1AvIhpHgCNwIR5N/NrwOYVk9+j6oNiEP9Zhha1CYEvjZ3JfbSNzrN17r7zlSaVRsTEwz+Iu9RXaSBdR3qHQolA+WrYZOX3dwSEYoxWEzStKhddozHtRRNJCWla792z5CrKFaOYkVTdEZp7RpqrV9n/f8Fmw9VN5l0lhR/Xg5lJphj6F614BMzis/HmJ64ypOaJaIzA3k76lA8egVSEwnTFo8zFQkPElmZB4ygZzPhxK0nziunesK0kOM4+Mh9E1IQXZANyyLu/fnqy0a+EYpx5i3pz+WqYbAiB/t1PWwVbAshdd6uC1SOWGLg3C/ezv/6Kz3dKu0Yv/HdC1InG68dih+Z2A/K4Xowk9GH8jnVm4FZ3oX2Wc0ogplP7Fu+waasHQDBhOKw=","ak.pv":"149","ak.dpoabenc":"","ak.tf":i};if(""!==t)_["ak.ruds"]=t;var o={i:!1,av:function(e){var t="http.initiator";if(e&&(!e[t]||"spa_hard"===e[t]))_["ak.feo"]=void 0!==a.aFeoApplied?1:0,BOOMR.addVar(_)},rv:function(){var a=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(a)}};BOOMR.plugins.AK={akVars:_,akDNSPreFetchDomain:n,init:function(){if(!o.i){var a=BOOMR.subscribe;a("before_beacon",o.av,null,null),a("onbeacon",o.rv,null,null),o.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
 
@@ -295,7 +302,8 @@ echo  $curl->setParams(['id'=>1])->get("http://localhost:8000/shop/home");
                 <div class="ban-body">
                     <ul class="list after only_one_row ">
                        <?php
-                       while($row = mysqli_fetch_assoc($zsresult)) {
+                       foreach($data as $row)
+                      {
                            ?>
 
                         <li class="item topToBottom"  >
@@ -338,9 +346,10 @@ echo  $curl->setParams(['id'=>1])->get("http://localhost:8000/shop/home");
                 </div>
                 <div class="ban-body">
                     <ul class="list after only_one_row news_goods_list">
-<?php
-while($row = mysqli_fetch_assoc($asresult)) {
-    ?>
+                        <?php
+                        foreach($data as $row)
+                        {
+                        ?>
 
                         <li class="item topToBottom" data-goods_id="100443" >
 
@@ -377,7 +386,7 @@ while($row = mysqli_fetch_assoc($asresult)) {
 <!--            </div>-->
 <!--        </div>-->
 
-        <script src="../../../../public/scripts/swiper.min.js"></script>
+        <script src="../../../public/scripts/swiper.min.js"></script>
 
         <script>
 
@@ -625,9 +634,9 @@ while($row = mysqli_fetch_assoc($asresult)) {
 
 
 <!--[if lte IE 9]>
-        <script src="../../../../public/scripts/general.js"></script>
-        <![endif]-->
-<script src="../../../../public/scripts/general.js"></script>
+<!--        <script src="../../../public/scripts/general.js"></script>-->
+<!--        <![endif]-->-->
+<script src="../../../public/scripts/general.js"></script>
 <script>
     var pleaseAddGoods = '请先添加商品';
     var pleaseSelectGoods = '请选择要操作的商品';

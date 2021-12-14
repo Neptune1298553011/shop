@@ -10,5 +10,5 @@ interface ProductModel
      */
     public function selectProductAll();
 
-    public function selectFindById($id);
+//    public function selectFindById($id);
 }

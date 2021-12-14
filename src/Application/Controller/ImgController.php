@@ -19,6 +19,9 @@ class ImgController extends BaseController
      */
     public function productDetail(){
         $id =$_GET['id'];
+        $post = $_POST;
+        $data = file_get_contents("php://input");
+
         $res =  $this->service->findImgById( $id);
         return  $this->json($res);
     }
