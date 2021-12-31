@@ -6,4 +6,7 @@ interface ProductService
 {
 
     public function findAllProduct();
+
+    public function findProductNewest();
+
 }

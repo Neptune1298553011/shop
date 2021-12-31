@@ -40,7 +40,7 @@ var_dump($products);
 <body class="cn ">
 
 
-<script src="../../../../public/scripts/passport.js"></script>
+<script src="../../../public/scripts/passport.js"></script>
 <div class="js_lang_package" style="display:none;" data-success-title="成功"
      data-fail-title="失败">lang package</div>
 

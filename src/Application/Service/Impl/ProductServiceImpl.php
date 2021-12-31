@@ -22,4 +22,9 @@ class ProductServiceImpl implements ProductService
     {
        return $this->productModel->selectProductAll();
     }
+
+    public function findProductNewest()
+    {
+        // TODO: Implement findProductNewest() method.
+    }
 }
