@@ -3,7 +3,7 @@
 class	home	extends	control
 
 {
-
+//1111
 function	index()
 {
     $mysqli = new mysqli('localhost:3306','admin','123456','test');
